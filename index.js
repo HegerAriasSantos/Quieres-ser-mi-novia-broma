@@ -1,7 +1,7 @@
 
 function changePosition(element) {
-  let maxWidth = window.innerWidth * 0.55;
-  let maxHeigth = window.innerHeight * 0.45;
+  let maxWidth = window.innerWidth * 0.50;
+  let maxHeigth = window.innerHeight * 0.40;
   let min = 1;
   let widthRandom = Math.floor(Math.random() * (maxWidth - min + 1) + min);
   let HeigthRandom = Math.floor(Math.random() * (maxHeigth - min + 1) + min);
@@ -11,6 +11,5 @@ function changePosition(element) {
 function correctAnswer(element) {
   let parent = element.parentElement.parentElement;
   parent.innerHTML = `<h1>Lo sabia, te amo</h1>`;
-
 
 }
